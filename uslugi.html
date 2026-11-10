@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Услуги: проектирование, электромонтаж, ЭФИ, Энергонадзор | Лида</title>
+<meta name="description" content="Проектирование электроснабжения, электромонтаж в домах и квартирах, электрофизические измерения, помощь при сдаче в Энергонадзор и закупке материала.">
+<meta property="og:title" content="Услуги: проектирование, электромонтаж, ЭФИ, Энергонадзор | Лида">
+<meta property="og:description" content="Проектирование электроснабжения, электромонтаж в домах и квартирах, электрофизические измерения, помощь при сдаче в Энергонадзор и закупке материала.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F6F2EB">
+<style>
+:root{--bg:#F6F2EB;--bg2:#EDE6DB;--ink:#14171A;--ink2:#2A2F35;--copper:#B2601F;--copper2:#D98336;
+--quiet:#5C6470;--line:rgba(20,23,26,.14);--white:#FFFDF9;--pad:22px;--max:1300px;
+--d:'Schibsted Grotesk',system-ui,sans-serif;--b:'Onest',system-ui,sans-serif;--m:'Azeret Mono',ui-monospace,monospace}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 var(--b);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}h1,h2,h3{margin:0;font-family:var(--d);font-weight:700;line-height:.99;letter-spacing:-.028em}
+a{color:inherit;text-decoration:none}[hidden]{display:none!important}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.header{position:sticky;top:0;z-index:40;background:rgba(246,242,235,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.header__in{display:flex;align-items:center;gap:16px;padding:11px 0}
+.logo{display:flex;align-items:center;gap:9px}
+.logo__mark{width:38px;height:38px;border:1.5px solid var(--ink);display:grid;place-items:center;background:var(--copper);color:#FFF7EF;font:700 15px/1 var(--d)}
+.logo__txt{display:flex;flex-direction:column;line-height:1.15}
+.logo__txt b{font:700 14.5px/1 var(--d)}
+.logo__txt i{font:500 8px/1.5 var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--quiet);font-style:normal}
+.nav{display:flex;gap:14px;margin-left:auto;font:500 12.5px/1 var(--b)}
+.nav a{padding:6px 0;border-bottom:1px solid transparent}
+.nav a:hover,.nav a.is-on{border-color:var(--copper);color:var(--copper)}
+.header__tel{font:600 13px/1 var(--b);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;font:600 11.5px/1 var(--b);letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ink);background:var(--ink);color:var(--white);cursor:pointer;transition:.18s}
+.btn:hover{background:#000}
+.btn--copper{background:var(--copper);border-color:var(--copper);color:#FFF8F1}
+.btn--copper:hover{background:#985016;border-color:#985016}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:var(--white)}
+.burger{display:none;width:42px;height:36px;border:1px solid var(--ink);background:transparent;align-items:center;justify-content:center;flex-direction:column;gap:4px;cursor:pointer}
+.burger i{display:block;width:16px;height:1px;background:var(--ink)}
+.burger.is-close i:first-child{transform:rotate(45deg) translateY(3px)}
+.burger.is-close i:last-child{transform:rotate(-45deg) translateY(-3px)}
+.drawer{position:fixed;inset:0;z-index:90;background:rgba(16,18,21,.76);display:none}
+.drawer[data-open]{display:block}
+.drawer__in{position:absolute;inset:0 0 0 auto;width:min(400px,92vw);background:var(--bg);padding:18px;overflow-y:auto}
+.drawer__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.drawer__nav{display:grid;font:700 21px/1 var(--d);letter-spacing:-.01em}
+.drawer__nav a{padding:13px 0;border-bottom:1px solid var(--line)}
+.drawer__cta{width:100%;margin-top:16px}
+.drawer__note{font-size:12px;color:var(--quiet);margin-top:10px}
+body.is-locked{overflow:hidden}
+.hero{position:relative;min-height:min(94svh,820px);display:flex;align-items:flex-end;overflow:hidden;background:#0C1014}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,18,.5),rgba(10,14,18,.12) 42%,rgba(10,14,18,.78) 78%,#0C1014 100%)}
+.hero__in{position:relative;z-index:2;width:100%;padding:clamp(28px,4.6vw,58px) 0 clamp(14px,2vw,22px);color:#FAF6F0}
+.hero h1{font-size:clamp(2rem,5.5vw,4.5rem);letter-spacing:-.035em;color:#fff}
+.hero h1 em{font-style:normal;color:#F0A868}
+.hero__lede{max-width:44ch;margin:14px 0 18px;color:rgba(250,246,240,.86)}
+.hero__acts{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:clamp(14px,2.2vw,26px)}
+.hero__acts .btn--ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.hero__acts .btn--ghost:hover{background:#fff;color:var(--ink)}
+.hero__facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(255,255,255,.28);gap:0 12px}
+.hero__facts div{padding:11px 0 0}
+.hero__facts b{display:block;font:700 clamp(.92rem,1.4vw,1.1rem)/1.2 var(--d)}
+.hero__facts span{font:500 8.5px/1.5 var(--m);letter-spacing:.08em;text-transform:uppercase;color:#F0A868}
+@media (max-width:1024px){.nav{display:none}.burger{display:flex}.header__tel{display:none}.hero__facts{grid-template-columns:1fr 1fr}}
+@media (max-width:380px){.header .btn--copper{display:none}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700&family=Onest:wght@400;500;600&family=Azeret+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.v1.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="header"><div class="header__in wrap">
+<a class="logo" href="index.html"><span class="logo__mark">Ш</span><span class="logo__txt"><b>Шагабиев</b><i>электрика · тепло · Лида</i></span></a>
+<nav class="nav" aria-label="Основное меню"><a href="index.html">Главная</a><a href="uslugi.html" class="is-on">Услуги</a><a href="otoplenie.html">Отопление</a><a href="obekty.html">Объекты</a><a href="kak-rabotaem.html">Порядок</a><a href="raboty.html">Работы</a><a href="o-kompanii.html">О компании</a><a href="kontakty.html">Контакты</a></nav>
+<a class="header__tel" href="tel:+375333414155">+375 (33) 341-41-55</a>
+<a class="btn btn--copper" href="#zayavka">Вызвать на объект</a>
+<button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drawer"><i></i><i></i><i></i></button>
+</div></header>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+<div class="drawer__in">
+<div class="drawer__top">
+<a class="logo" href="index.html"><span class="logo__mark">Ш</span><span class="logo__txt"><b>Шагабиев</b><i>Лида</i></span></a>
+<button class="burger is-close" type="button" data-close aria-label="Закрыть меню"><i></i><i></i></button>
+</div>
+<nav class="drawer__nav"><a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="otoplenie.html">Отопление</a><a href="obekty.html">Объекты</a><a href="kak-rabotaem.html">Порядок</a><a href="raboty.html">Работы</a><a href="o-kompanii.html">О компании</a><a href="kontakty.html">Контакты</a></nav>
+<a class="btn btn--copper drawer__cta" href="tel:+375333414155">Позвонить +375 (33) 341-41-55</a>
+<p class="drawer__note">Электромонтаж и электроотопление под ключ. Проектирование, ЭФИ, помощь при сдаче в Энергонадзор. Без предоплаты, по договору, с гарантией.</p>
+</div></div>
+<main>
+<section class="phero"><img src="assets/img/board.jpg" alt="Электрощит" width="1024" height="1024">
+<div class="phero__in"><div class="wrap"><div class="crumbs"><a href="index.html">Главная</a> / Услуги</div>
+<h1>Электромонтаж<br><em>любой сложности</em></h1><p>Проектирование, монтаж, измерения, документы. Плюс электроотопление и помощь с материалом.</p></div></div></section>
+<div class="bus" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<section class="section anchor" id="proekt"><div class="wrap"><div class="two">
+<div class="prose">
+<h3>Проектирование электроснабжения</h3>
+<p>Проект начинается с нагрузок: сколько мощности нужно дому, как распределить её по группам, какой кабель и какие автоматы поставить. Без этого получается «накидали розеток» и постоянные выбивания при включении чайника с бойлером.</p>
+<ul>
+<li>Расчёт нагрузок по помещениям и потребителям</li>
+<li>Однолинейная схема щита с группами</li>
+<li>Выбор сечения кабеля и аппаратов защиты</li>
+<li>Схема ввода, учёта и заземления</li>
+<li>Спецификация материалов с запасом, а не «два рулона на глаз»</li>
+</ul>
+<p>Проект отдаю в понятном виде: по нему может работать другая бригада, если вы решите делать монтаж сами.</p>
+<div class="chips"><span class="chip">Нагрузки</span><span class="chip">Однолинейная схема</span><span class="chip">Спецификация</span></div>
+</div>
+<div class="card"><p class="eyebrow">заявка</p><h3 style="margin-bottom:10px">Проект и смета</h3><form class="form" id="lead">
+<label>Как вас зовут<input type="text" id="lName" placeholder="Имя" required></label>
+<label>Телефон<input type="tel" id="lTel" placeholder="+375" required></label>
+<div class="row2"><label>Объект<input type="text" id="lObj" placeholder="Дом, квартира, магазин"></label><label>Город или район<input type="text" id="lCity" placeholder="Лида"></label></div>
+<label>Задача<textarea id="lTask" placeholder="Нужен электромонтаж в доме 120 м² и электроотопление. ТУ есть. Фото пришлю в чат."></textarea></label>
+<button class="btn btn--copper" type="submit">Отправить в WhatsApp</button>
+<p class="hint">Заявка откроется в WhatsApp: прикрепите фото щита, плана или ТУ, чтобы разговор был по делу.</p>
+</form></div>
+</div></div></section>
+
+<section class="section section--dim anchor" id="montazh"><div class="wrap"><div class="two">
+<div class="card"><p class="eyebrow">что входит</p>
+<table class="spec"><tbody>
+<tr><td>Разметка точек</td><td>да</td></tr>
+<tr><td>Штробление, прокладка трасс</td><td>да</td></tr>
+<tr><td>Подрозетники, распаечные коробки</td><td>да</td></tr>
+<tr><td>Сборка и маркировка щита</td><td>да</td></tr>
+<tr><td>Монтаж розеток и выключателей</td><td>да</td></tr>
+<tr><td>Освещение, включая уличное</td><td>да</td></tr>
+<tr><td>Фотоотчёт скрытых работ</td><td>да</td></tr>
+</tbody></table>
+<p class="note">Отделка стен и потолков — не моя зона: после меня приходят штукатуры и маляры.</p></div>
+<div class="prose">
+<h3>Электромонтаж в домах, квартирах и на объектах</h3>
+<p>Полная замена проводки или разводка с нуля. Работаю по проекту, поэтому каждая линия знает своё место: кухня отдельными группами, бойлер и котёл на своих автоматах, ванная под УЗО.</p>
+<p>Скрытые трассы фотографирую до штукатурки и отдаю фото вместе с актами: через два года при сверлении стены это сэкономит нервы и кабель.</p>
+<h3>Как выглядит щит</h3>
+<p>Группы подписаны, автоматы подобраны по нагрузке, УЗО там, где нужно. Не «всё на одном 25-амперном», а нормальная схема, по которой при аварии понятно, что отключилось.</p>
+</div>
+</div></div></section>
+
+<section class="section anchor" id="efi"><div class="wrap"><div class="two">
+<div class="prose">
+<h3>Электрофизические измерения (ЭФИ)</h3>
+<p>Измерения — это не формальность для бумажки. Это способ узнать, что изоляция кабеля не пробита, заземление работает, а УЗО срабатывает, а не «стоит для вида».</p>
+<ul>
+<li>Сопротивление изоляции линий</li>
+<li>Петля «фаза-ноль» и ток короткого замыкания</li>
+<li>Сопротивление заземляющего устройства</li>
+<li>Проверка УЗО (время и ток срабатывания)</li>
+<li>Протоколы по результатам</li>
+</ul>
+<h3>Зачем протоколы</h3>
+<p>Без них не примут объект, не подключат мощность и не оформить допуск. Протоколы делаю после монтажа, а если объект уже работал — перед сдачей или при подозрении на проблему с проводкой.</p>
+</div>
+<div class="gal" style="grid-template-columns:1fr"><figure><img src="assets/img/meas.jpg" alt="Измерения ЭФИ" width="1024" height="1024" loading="lazy"><figcaption>ЭФИ · измерения и протоколы</figcaption></figure></div>
+</div></div></section>
+
+<section class="section section--dim anchor" id="energonadzor"><div class="wrap"><div class="two">
+<div class="card"><p class="eyebrow">документы</p>
+<table class="spec"><tbody>
+<tr><td>ТУ</td><td>запрос и разбор</td></tr>
+<tr><td>Проект</td><td>да</td></tr>
+<tr><td>Однолинейная схема</td><td>да</td></tr>
+<tr><td>Акты скрытых работ</td><td>да</td></tr>
+<tr><td>Протоколы ЭФИ</td><td>да</td></tr>
+<tr><td>Сопровождение</td><td>до допуска</td></tr>
+</tbody></table>
+<p class="note">Что именно нужно в вашем случае — зависит от объекта и сетевой организации. Уточняем до начала работ.</p></div>
+<div class="prose">
+<h3>Помощь и сопровождение при сдаче в Энергонадзор</h3>
+<p>Самая частая причина задержек — не плохой монтаж, а неполный пакет документов. Инспектор приезжает, смотрит и возвращает с замечаниями, а объект стоит без электричества.</p>
+<p>Я собираю документы, готовлю объект к проверке и разбираю замечания по существу. Не «вот вам список, разбирайтесь сами», а сопровождение до допуска.</p>
+<h3>Что обычно проверяют</h3>
+<ul>
+<li>Соответствие схемы фактическому монтажу</li>
+<li>Наличие и работоспособность УЗО и заземления</li>
+<li>Протоколы измерений</li>
+<li>Доступность щита и учёт</li>
+<li>Сечения кабеля и номиналы автоматов</li>
+</ul>
+</div>
+</div></div></section>
+
+<section class="section anchor" id="material"><div class="wrap"><div class="two">
+<div class="prose">
+<h3>Помощь в закупке материала</h3>
+<p>Материал вы покупаете сами, поэтому и цена прозрачная. Моя задача — дать список, по которому не купят лишнего и не сэкономят на том, на чём нельзя.</p>
+<ul>
+<li>Список с артикулами, количеством и запасом</li>
+<li>Что можно взять дешевле без потери качества, а что нельзя</li>
+<li>Проверка кабеля на соответствие сечению</li>
+<li>Подбор аппаратов защиты под схему</li>
+</ul>
+<p>Если материал уже куплен — проверю, подходит ли он под задачу, до начала монтажа. Иногда дешевле поменять один автомат, чем переделывать щит.</p>
+</div>
+<div class="card"><p class="eyebrow">заявка</p><h3 style="margin-bottom:10px">Расчёт работ</h3><form class="form" id="lead">
+<label>Как вас зовут<input type="text" id="lName" placeholder="Имя" required></label>
+<label>Телефон<input type="tel" id="lTel" placeholder="+375" required></label>
+<div class="row2"><label>Объект<input type="text" id="lObj" placeholder="Дом, квартира, магазин"></label><label>Город или район<input type="text" id="lCity" placeholder="Лида"></label></div>
+<label>Задача<textarea id="lTask" placeholder="Нужен электромонтаж в доме 120 м² и электроотопление. ТУ есть. Фото пришлю в чат."></textarea></label>
+<button class="btn btn--copper" type="submit">Отправить в WhatsApp</button>
+<p class="hint">Заявка откроется в WhatsApp: прикрепите фото щита, плана или ТУ, чтобы разговор был по делу.</p>
+</form></div>
+</div></div></section>
+<section class="cta"><div class="wrap cta__in"><div><h2>Нужен монтаж<br><em>или отопление?</em></h2><p>Позвоните: по фото и плану скажу, что реально нужно и в каком порядке делать.</p></div>
+<div class="cta__acts"><a class="btn btn--light" href="https://wa.me/375333414155" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn--light" href="tel:+375333414155">Позвонить</a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap">
+<div class="footer__top">
+<div class="footer__about"><a class="logo logo--f" href="index.html"><span class="logo__mark">Ш</span><span class="logo__txt"><b>Шагабиев</b><i>электроотопление</i></span></a>
+<p>ИП Шагабиев Артём Тахирович. Электромонтаж и электроотопление под ключ: проектирование, монтаж, ЭФИ, сопровождение в Энергонадзоре. Лида, Гродненская область.</p>
+<a class="footer__tel" href="tel:+375333414155">+375 (33) 341-41-55</a>
+</div>
+<div><h4>Разделы</h4><ul><li><a href="index.html">Главная</a></li><li><a href="uslugi.html">Услуги</a></li><li><a href="otoplenie.html">Отопление</a></li><li><a href="obekty.html">Объекты</a></li><li><a href="kak-rabotaem.html">Порядок</a></li><li><a href="raboty.html">Работы</a></li><li><a href="o-kompanii.html">О компании</a></li><li><a href="kontakty.html">Контакты</a></li></ul></div>
+<div><h4>Услуги</h4><ul><li><a href="uslugi.html#proekt">Проектирование</a></li><li><a href="uslugi.html#montazh">Электромонтаж</a></li><li><a href="otoplenie.html">Электроотопление</a></li><li><a href="uslugi.html#efi">ЭФИ и протоколы</a></li><li><a href="uslugi.html#energonadzor">Энергонадзор</a></li><li><a href="uslugi.html#material">Закупка материала</a></li></ul></div>
+<div><h4>Связь</h4><ul><li><a href="tel:+375333414155">+375 (33) 341-41-55</a></li><li><a href="https://wa.me/375333414155" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="https://t.me/+375333414155" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://yandex.by/maps/?text=%D0%9B%D0%B8%D0%B4%D0%B0%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BE%D1%82%D0%BE%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5" target="_blank" rel="noopener">Лида, Гродненская область</a></li></ul></div>
+</div>
+<div class="footer__bottom"><span>© <span id="yr">2026</span> ИП Шагабиев Артём Тахирович</span>
+<span><a href="politika.html">Политика обработки персональных данных</a></span></div>
+</div></footer>
+<div class="mbar" role="navigation" aria-label="Быстрая связь">
+<a href="tel:+375333414155"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.36 2.3.56 3.5.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.4.56 3.5a1 1 0 0 1-.25 1z"/></svg>Позвонить</a>
+<a href="https://wa.me/375333414155" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m5.3 14.1c-.2.6-1.2 1.2-1.9 1.2-.5 0-1.1 0-2-.4a11 11 0 0 1-4.4-3.9c-.5-.8-.9-1.7-.9-2.5 0-.7.4-1.4.9-1.8.2-.2.4-.3.6-.3h.5c.2 0 .4 0 .5.4l.7 1.6c0 .2 0 .3-.1.5l-.4.5c-.1.2-.2.3 0 .5a8 8 0 0 0 3.4 2.9c.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4s0 .5-.1.9"/></svg>WhatsApp</a>
+<a href="viber://chat?number=%2B375333414155"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7 2 3 5.6 3 10c0 2.5 1.3 4.7 3.4 6.1L6 21l4-1.6c.6.1 1.3.2 2 .2 5 0 9-3.6 9-8s-4-8-9-8m3.6 11.3c-.4.9-1.9 1.6-2.7 1.5-2.4-.3-4.6-2.1-5.4-4.4-.3-.8.2-2 1-2.4.3-.2.7 0 .9.3l.7 1.2c.1.3 0 .5-.2.7-.3.2-.2.5.1.9.6.8 1.2 1.2 1.9 1.5.4.2.6 0 .8-.2s.4-.3.7-.2l1.3.6c.3.2.3.6.2.9"/></svg>Viber</a>
+<a href="https://t.me/+375333414155" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.8 4.2 2.9 11.4c-.9.3-.9 1.5 0 1.8l4.6 1.5 1.7 5.3c.2.7 1 .9 1.5.3l2.5-2.6 4.6 3.4c.6.4 1.4 0 1.5-.7l2.5-15c.1-.8-.6-1.4-1.5-1.2M9.4 14.3l8.4-5.6-6.8 6.6-.2 3z"/></svg>Telegram</a>
+</div>
+<script src="assets/js/main.v1.js"></script>
+</body>
+</html>
